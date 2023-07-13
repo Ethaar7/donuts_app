@@ -1,6 +1,5 @@
 package com.example.donutsapp.screens.home.composable
 
-import android.graphics.BlurMaskFilter.Blur
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -17,7 +16,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
@@ -30,10 +28,12 @@ import com.example.donutsapp.ui.theme.TextColorL
 import com.example.donutsapp.ui.theme.Typography
 
 @Composable
-fun DonutsCard(painter: Painter, modifier: Modifier = Modifier) {
+fun DonutsCard(painter: Painter, modifier: Modifier = Modifier, text: String) {
     Box(
         contentAlignment = Alignment.Center,
-        modifier = Modifier.padding(start = 16.dp)
+        modifier = Modifier
+            .padding(start = 16.dp, top = 16.dp)
+            .size(140.dp)
     ) {
 
         Column(
@@ -46,7 +46,7 @@ fun DonutsCard(painter: Painter, modifier: Modifier = Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Chocolate Cherry",
+                text = text,
                 style = Typography.labelSmall.copy(fontSize = 14.sp, color = Black60),
                 modifier = Modifier
                     .padding(top = 16.dp)
@@ -64,7 +64,9 @@ fun DonutsCard(painter: Painter, modifier: Modifier = Modifier) {
         Image(
             painter = painter,
             contentDescription = null,
-            modifier = Modifier.offset(0.dp, -60.dp)
+            modifier = Modifier
+                .size(120.dp)
+                .offset(0.dp, -60.dp)
         )
     }
 
@@ -74,5 +76,5 @@ fun DonutsCard(painter: Painter, modifier: Modifier = Modifier) {
 @Preview(showSystemUi = true)
 @Composable
 fun PreviewD() {
-    DonutsCard(painter = painterResource(id = R.drawable.image_1111))
+    DonutsCard(painter = painterResource(id = R.drawable.image_1111), text = "Chocolate Cherry")
 }

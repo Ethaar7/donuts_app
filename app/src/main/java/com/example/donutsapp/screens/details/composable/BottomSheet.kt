@@ -45,7 +45,7 @@ fun BottomSheet(
                 .fillMaxSize()
                 .clip(RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp))
                 .background(Color.White)
-                .height(450.dp)
+                .height(460.dp)
         ) {
 
             Column(Modifier.fillMaxSize()) {

@@ -10,6 +10,6 @@ private const val ROUTE = "DetailsScreen"
 @ExperimentalMaterialApi
 fun NavGraphBuilder.detailsRoute(navController: NavController) {
     composable(route = ROUTE) {
-        DetailsScreen(navController)
+        DetailsScreen()
     }
 }
