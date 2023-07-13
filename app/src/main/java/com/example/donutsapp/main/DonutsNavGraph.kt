@@ -11,7 +11,7 @@ import com.example.donutsapp.screens.start.startRoute
 @ExperimentalMaterialApi
 @Composable
 fun DonutsNavGraph(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = Screen.StartScreen.rout) {
+    NavHost(navController = navController, startDestination = Screen.DetailsScreen.rout) {
         startRoute(navController)
         homeRoute(navController)
         detailsRoute(navController)

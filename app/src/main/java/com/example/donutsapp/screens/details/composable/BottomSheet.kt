@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -41,8 +40,6 @@ fun BottomSheet(
     onClickPlus: () -> Unit,
     onClickMinus: () -> Unit,
 ) {
-    Box() {
-
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -161,41 +158,10 @@ fun BottomSheet(
                             modifier = Modifier.align(Alignment.CenterVertically)
                         )
                     }
-
-
                 }
-
-
             }
-
-
-        }
-
-    }
-}
-
-@ExperimentalMaterialApi
-@Composable
-fun Favorite(onClickFavorite: () -> Unit, stat: DetailsState, modifier: Modifier = Modifier) {
-    Box(modifier = Modifier.offset(0.dp,-36.dp ) .padding(16.dp)
-        .size(45.dp)
-        .clip(RoundedCornerShape(16.dp))
-        .background(Color.White)
-        .fillMaxSize(),) {
-        IconButton(
-            onClick = onClickFavorite,
-            modifier = Modifier
-
-        ) {
-            Icon(
-                painter = painterResource(
-                    id = if (stat.isFavorite == false) R.drawable.ic_round_favorite
-                    else R.drawable.material_symbols_favorite
-                ),
-                contentDescription = null,
-                tint = TextColorL,
-            )
         }
     }
 
-}
+
+
