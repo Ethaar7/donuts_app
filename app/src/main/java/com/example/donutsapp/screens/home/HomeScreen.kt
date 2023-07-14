@@ -33,7 +33,6 @@ fun HomeScreen(navController: NavController) {
     })
 }
 
-//@Preview(showSystemUi = true)
 @ExperimentalMaterialApi
 @ExperimentalMaterial3Api
 @Composable
@@ -55,32 +54,32 @@ fun HomeContent(
                 HeaderHome(
                     painter = painterResource(id = R.drawable.strawberry_wheel_donut),
                     color = CardColorSecandary,
-                    text = "Strawberry Wheel",
+                    text = stringResource(R.string.strawberry_wheel5),
                     onClick = { onClick() }
                 )
                 HeaderHome(
                     painter = painterResource(id = R.drawable.image_777),
                     color = CardColorBank,
-                    text = "Chocolate Glaze",
+                    text = stringResource(R.string.chocolate_glaze),
                     onClick = { onClick() }
                 )
                 HeaderHome(
                     painter = painterResource(id = R.drawable.strawberry_wheel_donut),
                     color = CardColorSecandary,
-                    text = "Strawberry Wheel",
+                    text = stringResource(R.string.strawberry_wheel5),
                     onClick = { onClick() }
                 )
                 HeaderHome(
                     painter = painterResource(id = R.drawable.image_777),
                     color = CardColorBank,
-                    text = "Chocolate Glaze",
+                    text = stringResource(R.string.chocolate_glaze),
                     onClick = { onClick() }
                 )
 
             }
         }
         Text(
-            text = "Donuts",
+            text = stringResource(R.string.donuts3),
             style = Typography.labelLarge,
             modifier = Modifier.padding(16.dp)
         )
@@ -93,27 +92,27 @@ fun HomeContent(
             item {
                 DonutsCard(
                     painter = painterResource(id = R.drawable.image_1111),
-                    text = "Chocolate Cherry"
+                    text = stringResource(R.string.chocolate_cherry)
                 )
                 DonutsCard(
                     painter = painterResource(id = R.drawable.image_1212),
-                    text = "Strawberry Rain"
+                    text = stringResource(R.string.strawberry_rain)
                 )
                 DonutsCard(
                     painter = painterResource(id = R.drawable.image_10),
-                    text = "Strawberry Coco "
+                    text = stringResource(R.string.strawberry_coco)
                 )
                 DonutsCard(
                     painter = painterResource(id = R.drawable.image_1212),
-                    text = "Strawberry Rain"
+                    text = stringResource(R.string.strawberry_rain)
                 )
                 DonutsCard(
                     painter = painterResource(id = R.drawable.image_1111),
-                    text = "Chocolate Cherry"
+                    text = stringResource(R.string.chocolate_cherry)
                 )
                 DonutsCard(
                     painter = painterResource(id = R.drawable.image_10),
-                    text = "Strawberry Coco "
+                    text = stringResource(R.string.strawberry_coco)
                 )
             }
         }
