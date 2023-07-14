@@ -43,7 +43,7 @@ fun Favorite(stat: DetailsState, onClickFavorite: () -> Unit) {
             Icon(
                 painter = painterResource(
                     id = if (stat.isFavorite == true) R.drawable.material_symbols_favorite
-                    else R.drawable.ic_round_favorite
+                    else R.drawable.vector11
                 ),
                 contentDescription = null,
                 tint = TextColorL,

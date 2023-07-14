@@ -48,14 +48,14 @@ fun HeaderHome(painter: Painter, color: Color, text: String, onClick: () -> Unit
                 .clickable { onClick() }
         ) {
             Icon(
-                painter = painterResource(id = R.drawable.ic_round_favorite),
+                painter = painterResource(id = R.drawable.vector11),
                 contentDescription = "Icon favorite",
                 tint = TextColorL,
                 modifier = Modifier
                     .padding(start = 16.dp, top = 16.dp)
                     .clip(CircleShape)
                     .background(Color.White)
-                    .padding(4.dp)
+                    .padding(8.dp)
             )
 
             Column(
@@ -98,7 +98,7 @@ fun HeaderHome(painter: Painter, color: Color, text: String, onClick: () -> Unit
             painter = painter,
             contentDescription = "Image type donuts",
             modifier = Modifier
-                .size(200.dp)
+                .size(180.dp)
                 .offset(80.dp),
             contentScale = ContentScale.Fit
         )

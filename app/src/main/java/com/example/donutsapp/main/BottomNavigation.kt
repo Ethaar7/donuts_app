@@ -76,8 +76,9 @@ fun RowScope.AddItem(
     BottomNavigationItem(
         label = { Text(text = screen.title) },
         icon = {
+            val selected = currentDestination?.hierarchy?.any { it.route == screen.rout } == true
             Icon(
-                painter = painterResource(id = screen.icon),
+                painter = painterResource(id = if (selected) screen.icon_focused else screen.icon),
                 contentDescription = null,
                 tint = TextColorL
             )
@@ -100,3 +101,4 @@ fun currentRoute(navController: NavHostController): String? {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     return navBackStackEntry?.destination?.route
 }
+

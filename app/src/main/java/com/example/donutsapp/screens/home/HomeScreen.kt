@@ -59,7 +59,7 @@ fun HomeContent(
                     onClick = { onClick() }
                 )
                 HeaderHome(
-                    painter = painterResource(id = R.drawable.image_999),
+                    painter = painterResource(id = R.drawable.image_777),
                     color = CardColorBank,
                     text = "Chocolate Glaze",
                     onClick = { onClick() }
@@ -71,7 +71,7 @@ fun HomeContent(
                     onClick = { onClick() }
                 )
                 HeaderHome(
-                    painter = painterResource(id = R.drawable.image_999),
+                    painter = painterResource(id = R.drawable.image_777),
                     color = CardColorBank,
                     text = "Chocolate Glaze",
                     onClick = { onClick() }
