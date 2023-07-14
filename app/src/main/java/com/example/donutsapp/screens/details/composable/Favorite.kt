@@ -23,8 +23,8 @@ import com.example.donutsapp.ui.theme.TextColorL
 
 @ExperimentalMaterialApi
 @Composable
-fun Favorite(onClickFavorite: () -> Unit, modifier: Modifier = Modifier) {
-    val stat = DetailsState()
+fun Favorite(stat: DetailsState, onClickFavorite: () -> Unit) {
+
     Box(
         modifier = Modifier
             .offset(0.dp, -36.dp)

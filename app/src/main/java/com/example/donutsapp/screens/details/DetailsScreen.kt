@@ -68,8 +68,8 @@ fun DetailsContent(
             )
 
             Favorite(
-                onClickFavorite = { onClickFavorite(state) }
-            )
+                stat = state,
+                onClickFavorite = { onClickFavorite(state) })
 
         }
     }
