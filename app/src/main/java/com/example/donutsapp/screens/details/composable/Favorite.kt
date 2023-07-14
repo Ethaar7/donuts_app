@@ -24,7 +24,7 @@ import com.example.donutsapp.ui.theme.TextColorL
 @ExperimentalMaterialApi
 @Composable
 fun Favorite(onClickFavorite: () -> Unit, modifier: Modifier = Modifier) {
-    val stat: DetailsState = DetailsState()
+    val stat = DetailsState()
     Box(
         modifier = Modifier
             .offset(0.dp, -36.dp)
@@ -42,8 +42,8 @@ fun Favorite(onClickFavorite: () -> Unit, modifier: Modifier = Modifier) {
         ) {
             Icon(
                 painter = painterResource(
-                    id = if (stat.isFavorite == false) R.drawable.ic_round_favorite
-                    else R.drawable.material_symbols_favorite
+                    id = if (stat.isFavorite == true) R.drawable.material_symbols_favorite
+                    else R.drawable.ic_round_favorite
                 ),
                 contentDescription = null,
                 tint = TextColorL,
