@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterialApi::class)
+
 package com.example.donutsapp.main
 
 import android.os.Bundle
@@ -10,17 +12,13 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @ExperimentalMaterial3Api
 @AndroidEntryPoint
-@ExperimentalMaterialApi
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-//            BottomSheet()
-//            DetailsScreen()
-//            StartContent()
+//         val systemUiController = rememberSystemUiController()
+//            systemUiController.setSystemBarsColor()
             DonutsApp()
-//            BottomNavigation()
-
         }
     }
 }

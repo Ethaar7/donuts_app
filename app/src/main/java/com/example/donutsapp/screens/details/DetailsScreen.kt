@@ -14,7 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.donutsapp.LocalNavigationProvider
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.donutsapp.Screen
 import com.example.donutsapp.screens.details.composable.BottomSheet
 import com.example.donutsapp.screens.details.composable.Favorite
@@ -24,9 +25,9 @@ import com.example.donutsapp.ui.theme.BackgroundColor
 @ExperimentalMaterialApi
 @Composable
 fun DetailsScreen(
+    navController: NavController,
     viewModel: DetailsViewModel = hiltViewModel(),
 ) {
-    val navController = LocalNavigationProvider.current
     val state by viewModel.state.collectAsState()
     DetailsContent(
         onClickPlus = viewModel::onIncreaseCounter,
@@ -71,8 +72,6 @@ fun DetailsContent(
             )
 
         }
-
-
     }
 }
 
@@ -80,5 +79,5 @@ fun DetailsContent(
 @Preview
 @Composable
 fun Preview() {
-    DetailsScreen()
+    DetailsScreen(navController = rememberNavController())
 }

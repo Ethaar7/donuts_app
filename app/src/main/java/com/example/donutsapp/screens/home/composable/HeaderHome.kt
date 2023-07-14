@@ -45,7 +45,7 @@ fun HeaderHome(painter: Painter, color: Color, text: String, onClick: () -> Unit
                 .background(color)
                 .width(193.dp)
                 .height(315.dp)
-                .clickable { onClick }
+                .clickable { onClick() }
         ) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_round_favorite),

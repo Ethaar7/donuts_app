@@ -12,4 +12,5 @@ sealed class Screen(val rout: String, val title: String, val icon: Int) {
 
     object StartScreen : Screen(rout = "StartScreen", title = "", icon = 0)
     object DetailsScreen : Screen(rout = "DetailsScreen", title = "", icon = 0)
+
 }

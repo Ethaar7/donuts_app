@@ -12,6 +12,6 @@ private const val ROUTE = "HomeScreen"
 @ExperimentalMaterialApi
 fun NavGraphBuilder.homeRoute(navController: NavController) {
     composable(route = ROUTE) {
-        HomeScreen()
+        HomeScreen(navController)
     }
 }

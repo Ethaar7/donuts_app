@@ -12,7 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.donutsapp.LocalNavigationProvider
+import androidx.navigation.NavController
 import com.example.donutsapp.R
 import com.example.donutsapp.Screen
 import com.example.donutsapp.screens.start.composable.ButtonStart
@@ -20,8 +20,7 @@ import com.example.donutsapp.screens.start.composable.TextContent
 import com.example.donutsapp.ui.theme.BackgroundColor
 
 @Composable
-fun StartScreen() {
-    val navController = LocalNavigationProvider.current
+fun StartScreen(navController: NavController) {
     StartContent(onClickStart = {
         navController.navigate(Screen.HomeScreen.rout)
     })

@@ -8,6 +8,6 @@ private const val ROUTE = "StartScreen"
 
 fun NavGraphBuilder.startRoute(navController: NavController) {
     composable(route = ROUTE) {
-        StartScreen()
+        StartScreen(navController)
     }
 }

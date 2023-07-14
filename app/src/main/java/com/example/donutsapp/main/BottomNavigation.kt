@@ -31,10 +31,9 @@ import com.example.donutsapp.ui.theme.TextColorL
 fun BottomNavigation() {
     val navController = rememberNavController()
     Scaffold(bottomBar = { BottomBar(navController = navController) }) {
-        DonutsNavGraph()
+        DonutsNavGraph(navController)
     }
 }
-
 
 @Composable
 fun BottomBar(navController: NavHostController) {
@@ -88,83 +87,6 @@ fun RowScope.AddItem(
 }
 
 
-//@OptIn(ExperimentalMaterial3Api::class)
-//@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-//@Composable
-//fun BottomNavigation() {
-//    val navController = rememberNavController()
-//
-//    var bottomState by remember {
-//        mutableStateOf("Home")
-//    }
-//    Scaffold(
-//        bottomBar = {
-//
-//            BottomNavigation(backgroundColor = Color.White, modifier = Modifier.height(68.dp)) {
-//
-//                BottomNavigationItem(selected = bottomState == "Home",
-//                    onClick = { bottomState = "Home" },
-//                    label = { Text(text = "") },
-//                    icon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.home),
-//                            contentDescription = null,
-//                            tint = TextColorL
-//                        )
-//                    }
-//                )
-//
-//
-//                BottomNavigationItem(selected = bottomState == "DetailScreen",
-//                    onClick = { bottomState = "Search" },
-//                    label = { Text(text = "") },
-//                    icon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.heart2),
-//                            contentDescription = null,
-//                            tint = TextColorL
-//                        )
-//                    }
-//                )
-//
-//
-//                BottomNavigationItem(selected = bottomState == "Notification",
-//                    onClick = { bottomState = "Tickets" },
-//                    label = { Text(text = "") },
-//                    icon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.notification),
-//                            contentDescription = null,
-//                            tint = TextColorL
-//                        )
-//                    }
-//                )
-//
-//                BottomNavigationItem(selected = bottomState == "Buy",
-//                    onClick = { bottomState = "Profile" },
-//                    label = { Text(text = "") },
-//                    icon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.buy),
-//                            contentDescription = null,
-//                            tint = TextColorL
-//                        )
-//                    }
-//                )
-//                BottomNavigationItem(selected = bottomState == "Profile",
-//                    onClick = { bottomState = "Profile" },
-//                    label = { Text(text = "") },
-//                    icon = {
-//                        Icon(
-//                            painter = painterResource(R.drawable.mingcute_user_2_line),
-//                            contentDescription = null,
-//                            tint = TextColorL
-//                        )
-//                    }
-//                )
-//            }
-//        }) {}
-//}
 
 
 
