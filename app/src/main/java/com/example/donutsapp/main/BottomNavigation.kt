@@ -30,7 +30,11 @@ import com.example.donutsapp.ui.theme.TextColorL
 @Composable
 fun BottomNavigation() {
     val navController = rememberNavController()
-    Scaffold(bottomBar = { BottomBar(navController = navController) }) {
+    Scaffold(bottomBar = {
+        if (currentRoute(navController) != Screen.StartScreen.rout)
+            if (currentRoute(navController) != Screen.DetailsScreen.rout)
+                BottomBar(navController = navController)
+    }) {
         DonutsNavGraph(navController)
     }
 }
@@ -46,6 +50,7 @@ fun BottomBar(navController: NavHostController) {
     )
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
+
 
     BottomNavigation(backgroundColor = Color.White) {
         screens.forEach { screen ->
@@ -87,6 +92,8 @@ fun RowScope.AddItem(
 }
 
 
-
-
-
+@Composable
+fun currentRoute(navController: NavHostController): String? {
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    return navBackStackEntry?.destination?.route
+}
