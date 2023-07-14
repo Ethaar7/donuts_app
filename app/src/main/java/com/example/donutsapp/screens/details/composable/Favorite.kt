@@ -36,7 +36,7 @@ fun Favorite(onClickFavorite: () -> Unit, modifier: Modifier = Modifier) {
         contentAlignment = Alignment.TopEnd
     ) {
         IconButton(
-            onClick = { onClickFavorite() },
+            onClick = onClickFavorite,
             modifier = Modifier
 
         ) {
