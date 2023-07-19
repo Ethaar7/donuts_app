@@ -17,12 +17,12 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.donutsapp.R
 import com.example.donutsapp.Screen
-import com.example.donutsapp.screens.home.composable.DonutsCard
-import com.example.donutsapp.screens.home.composable.HeaderHome
-import com.example.donutsapp.screens.home.composable.Search
 import com.example.donutsapp.ui.CardColorBank
 import com.example.donutsapp.ui.CardColorSecandary
 import com.example.donutsapp.ui.Typography
+import com.example.donutsapp.ui.screens.home.composable.DonutsCard
+import com.example.donutsapp.ui.screens.home.composable.HeaderHome
+import com.example.donutsapp.ui.screens.home.composable.Search
 
 @ExperimentalMaterialApi
 @ExperimentalMaterial3Api

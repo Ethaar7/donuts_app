@@ -28,10 +28,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.donutsapp.R
-import com.example.donutsapp.screens.details.DetailsState
 import com.example.donutsapp.ui.Black87
 import com.example.donutsapp.ui.TextColorL
 import com.example.donutsapp.ui.Typography
+import com.example.donutsapp.ui.screens.details.DetailsState
 
 @ExperimentalMaterialApi
 @Composable

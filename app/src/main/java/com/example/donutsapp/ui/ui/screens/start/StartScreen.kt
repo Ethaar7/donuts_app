@@ -15,9 +15,9 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.donutsapp.R
 import com.example.donutsapp.Screen
-import com.example.donutsapp.screens.start.composable.ButtonStart
-import com.example.donutsapp.screens.start.composable.TextContent
 import com.example.donutsapp.ui.BackgroundColor
+import com.example.donutsapp.ui.screens.start.composable.ButtonStart
+import com.example.donutsapp.ui.screens.start.composable.TextContent
 
 @Composable
 fun StartScreen(navController: NavController) {

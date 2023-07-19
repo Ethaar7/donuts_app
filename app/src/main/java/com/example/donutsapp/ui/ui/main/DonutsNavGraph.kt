@@ -6,13 +6,13 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.donutsapp.screens.BuyScreen
-import com.example.donutsapp.screens.FavoriteScreen
-import com.example.donutsapp.screens.NotificationScreen
-import com.example.donutsapp.screens.ProfileScreen
-import com.example.donutsapp.screens.details.detailsRoute
-import com.example.donutsapp.screens.home.HomeScreen
-import com.example.donutsapp.screens.start.startRoute
+import com.example.donutsapp.ui.screens.BuyScreen
+import com.example.donutsapp.ui.screens.FavoriteScreen
+import com.example.donutsapp.ui.screens.NotificationScreen
+import com.example.donutsapp.ui.screens.ProfileScreen
+import com.example.donutsapp.ui.screens.details.detailsRoute
+import com.example.donutsapp.ui.screens.home.HomeScreen
+import com.example.donutsapp.ui.screens.start.startRoute
 
 @ExperimentalMaterialApi
 @ExperimentalMaterial3Api
@@ -39,6 +39,7 @@ fun DonutsNavGraph(navController: NavHostController) {
         composable(Screen.ProfileScreen.rout) {
             ProfileScreen()
         }
+
 
     }
 }

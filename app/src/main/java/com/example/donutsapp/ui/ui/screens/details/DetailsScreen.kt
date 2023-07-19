@@ -17,10 +17,10 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.donutsapp.Screen
-import com.example.donutsapp.screens.details.composable.BottomSheet
-import com.example.donutsapp.screens.details.composable.Favorite
-import com.example.donutsapp.screens.details.composable.HeaderDetails
 import com.example.donutsapp.ui.BackgroundColor
+import com.example.donutsapp.ui.screens.details.composable.BottomSheet
+import com.example.donutsapp.ui.screens.details.composable.Favorite
+import com.example.donutsapp.ui.screens.details.composable.HeaderDetails
 
 @ExperimentalMaterialApi
 @Composable

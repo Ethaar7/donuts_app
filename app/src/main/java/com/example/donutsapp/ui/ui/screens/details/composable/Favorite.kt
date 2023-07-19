@@ -18,8 +18,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.donutsapp.R
-import com.example.donutsapp.screens.details.DetailsState
 import com.example.donutsapp.ui.TextColorL
+import com.example.donutsapp.ui.screens.details.DetailsState
 
 @ExperimentalMaterialApi
 @Composable
